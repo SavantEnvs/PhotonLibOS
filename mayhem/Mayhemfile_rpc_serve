@@ -1,0 +1,9 @@
+project: savantenvs/PhotonLibOS
+target: rpc_serve
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/rpc_serve/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_rpc_serve
+    libfuzzer: true
+    timeout: 10

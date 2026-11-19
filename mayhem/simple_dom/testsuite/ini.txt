@@ -1,0 +1,7 @@
+
+; comment
+[a]
+b = c
+n=12
+[sec two]
+k=v

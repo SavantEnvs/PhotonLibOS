@@ -1,0 +1,13 @@
+POST /upload?name=a HTTP/1.1
+Host: localhost:80
+Transfer-Encoding: chunked
+
+4
+abcd
+0
+
+GET /x HTTP/1.1
+Host: h
+Content-Length: 3
+
+abc

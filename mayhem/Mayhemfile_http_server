@@ -1,0 +1,9 @@
+project: savantenvs/PhotonLibOS
+target: http_server
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http_server/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_http_server
+    libfuzzer: true
+    timeout: 10
